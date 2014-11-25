@@ -142,7 +142,7 @@ class Bucket(object):
         return self.get_key(key_name, headers=headers)
 
     def get_key(self, key_name, headers=None, version_id=None,
-                response_headers=None, validate=True):
+                response_headers=None, validate=False):
         """
         Check to see if a particular key exists within the bucket.  This
         method uses a HEAD request to check for the existence of the key.
